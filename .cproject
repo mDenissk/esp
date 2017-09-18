@@ -36,11 +36,12 @@
 								<option id="gnu.cpp.compiler.option.other.other.1730664714" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.optimization.flags.336032692" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" value="-fno-common" valueType="string"/>
 								<option id="com.crt.advproject.cpp.hdrlib.502782006" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib" value="Newlib" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.include.paths.269822394" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+								<option id="gnu.cpp.compiler.option.include.paths.269822394" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_board_nxp_lpcxpresso_1549/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/freertos/inc}&quot;"/>
 								</option>
-								<option id="com.crt.advproject.cpp.misc.dialect.1299638922" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.c++11" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.misc.dialect.1299638922" name="Language standard" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.cpp11" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.732160579" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.exe.debug.353712939" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug">
@@ -59,11 +60,12 @@
 								</option>
 								<option id="gnu.c.compiler.option.misc.other.8128057" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections" valueType="string"/>
 								<option id="gnu.c.compiler.option.optimization.flags.473690283" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" value="-fno-common" valueType="string"/>
-								<option id="gnu.c.compiler.option.include.paths.813560697" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+								<option id="gnu.c.compiler.option.include.paths.813560697" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_board_nxp_lpcxpresso_1549/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/freertos/inc}&quot;"/>
 								</option>
-								<option id="com.crt.advproject.c.misc.dialect.444664770" superClass="com.crt.advproject.c.misc.dialect" value="com.crt.advproject.misc.dialect.c11" valueType="enumerated"/>
+								<option id="com.crt.advproject.c.misc.dialect.444664770" name="Language standard" superClass="com.crt.advproject.c.misc.dialect" value="com.crt.advproject.misc.dialect.c11" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.input.1986444157" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gas.exe.debug.961339906" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug">
@@ -72,9 +74,10 @@
 								<option id="com.crt.advproject.gas.specs.977356102" name="Specs" superClass="com.crt.advproject.gas.specs" value="com.crt.advproject.gas.specs.newlib" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.arch.1843674127" name="Architecture" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm3" valueType="enumerated"/>
 								<option id="gnu.both.asm.option.flags.crt.570984504" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC15XX__" valueType="string"/>
-								<option id="gnu.both.asm.option.include.paths.265045356" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+								<option id="gnu.both.asm.option.include.paths.265045356" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_board_nxp_lpcxpresso_1549/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/freertos/inc}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1527739742" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="com.crt.advproject.assembler.input.216434674" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
@@ -82,7 +85,7 @@
 							<tool id="com.crt.advproject.link.cpp.exe.debug.876718492" name="MCU C++ Linker" superClass="com.crt.advproject.link.cpp.exe.debug">
 								<option id="com.crt.advproject.link.cpp.thumb.1109503801" name="Thumb mode" superClass="com.crt.advproject.link.cpp.thumb" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.memory.heapAndStack.cpp.725407504" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack.cpp" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
-								<option id="com.crt.advproject.link.cpp.multicore.master.userobjs.1326120808" name="Slave Objects (not visible)" superClass="com.crt.advproject.link.cpp.multicore.master.userobjs" valueType="userObjs"/>
+								<option id="com.crt.advproject.link.cpp.multicore.master.userobjs.1326120808" name="Slave Objects (not visible)" superClass="com.crt.advproject.link.cpp.multicore.master.userobjs" useByScannerDiscovery="false" valueType="userObjs"/>
 								<option id="com.crt.advproject.link.cpp.arch.1112497719" name="Architecture" superClass="com.crt.advproject.link.cpp.arch" value="com.crt.advproject.link.cpp.target.cm3" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.cpp.script.559703807" name="Linker script" superClass="com.crt.advproject.link.cpp.script" value="&quot;esp_Debug.ld&quot;" valueType="string"/>
 								<option id="com.crt.advproject.link.cpp.manage.769566653" name="Manage linker script" superClass="com.crt.advproject.link.cpp.manage" value="true" valueType="boolean"/>
@@ -93,15 +96,17 @@
 									<listOptionValue builtIn="false" value="-print-memory-usage"/>
 								</option>
 								<option id="com.crt.advproject.link.cpp.hdrlib.1683281430" name="Library" superClass="com.crt.advproject.link.cpp.hdrlib" value="com.crt.advproject.cpp.link.hdrlib.newlib.nohost" valueType="enumerated"/>
-								<option id="gnu.cpp.link.option.libs.235401021" superClass="gnu.cpp.link.option.libs" valueType="libs">
+								<option id="gnu.cpp.link.option.libs.235401021" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="lpc_board_nxp_lpcxpresso_1549"/>
 									<listOptionValue builtIn="false" value="lpc_chip_15xx"/>
+									<listOptionValue builtIn="false" value="freertos"/>
 								</option>
-								<option id="gnu.cpp.link.option.paths.78519494" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+								<option id="gnu.cpp.link.option.paths.78519494" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_board_nxp_lpcxpresso_1549/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/freertos/Debug}&quot;"/>
 								</option>
-								<option id="com.crt.advproject.link.cpp.crpenable.1244245420" superClass="com.crt.advproject.link.cpp.crpenable"/>
+								<option id="com.crt.advproject.link.cpp.crpenable.1244245420" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.cpp.crpenable"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.495935140" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -152,11 +157,12 @@
 								<option id="gnu.cpp.compiler.option.other.other.1958868509" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.optimization.flags.1803215813" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" value="-fno-common -Os" valueType="string"/>
 								<option id="com.crt.advproject.cpp.hdrlib.167754004" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib" value="Newlib" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.include.paths.639931180" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+								<option id="gnu.cpp.compiler.option.include.paths.639931180" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_board_nxp_lpcxpresso_1549/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/freertos/inc}&quot;"/>
 								</option>
-								<option id="com.crt.advproject.cpp.misc.dialect.1430011019" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.c++11" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.misc.dialect.1430011019" name="Language standard" superClass="com.crt.advproject.cpp.misc.dialect" useByScannerDiscovery="true" value="com.crt.advproject.misc.dialect.cpp11" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.373426080" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.exe.release.1669938567" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.release">
@@ -175,11 +181,12 @@
 								</option>
 								<option id="gnu.c.compiler.option.misc.other.1515504248" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections" valueType="string"/>
 								<option id="gnu.c.compiler.option.optimization.flags.367173365" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" value="-fno-common" valueType="string"/>
-								<option id="gnu.c.compiler.option.include.paths.430442755" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+								<option id="gnu.c.compiler.option.include.paths.430442755" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_board_nxp_lpcxpresso_1549/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/freertos/inc}&quot;"/>
 								</option>
-								<option id="com.crt.advproject.c.misc.dialect.648105230" superClass="com.crt.advproject.c.misc.dialect" value="com.crt.advproject.misc.dialect.c11" valueType="enumerated"/>
+								<option id="com.crt.advproject.c.misc.dialect.648105230" name="Language standard" superClass="com.crt.advproject.c.misc.dialect" value="com.crt.advproject.misc.dialect.c11" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.input.1213521477" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gas.exe.release.878228636" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.release">
@@ -188,9 +195,10 @@
 								<option id="com.crt.advproject.gas.specs.479072656" name="Specs" superClass="com.crt.advproject.gas.specs" value="com.crt.advproject.gas.specs.newlib" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.arch.1740512910" name="Architecture" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm3" valueType="enumerated"/>
 								<option id="gnu.both.asm.option.flags.crt.1062018663" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC15XX__" valueType="string"/>
-								<option id="gnu.both.asm.option.include.paths.2053667228" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+								<option id="gnu.both.asm.option.include.paths.2053667228" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_board_nxp_lpcxpresso_1549/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/freertos/inc}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.345517908" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="com.crt.advproject.assembler.input.240966125" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
@@ -198,7 +206,7 @@
 							<tool id="com.crt.advproject.link.cpp.exe.release.256585675" name="MCU C++ Linker" superClass="com.crt.advproject.link.cpp.exe.release">
 								<option id="com.crt.advproject.link.cpp.thumb.1917562487" name="Thumb mode" superClass="com.crt.advproject.link.cpp.thumb" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.memory.heapAndStack.cpp.672298783" name="Heap and Stack options" superClass="com.crt.advproject.link.memory.heapAndStack.cpp" value="&amp;Heap:Default;Post Data;Default&amp;Stack:Default;End;Default" valueType="string"/>
-								<option id="com.crt.advproject.link.cpp.multicore.master.userobjs.765995878" name="Slave Objects (not visible)" superClass="com.crt.advproject.link.cpp.multicore.master.userobjs" valueType="userObjs"/>
+								<option id="com.crt.advproject.link.cpp.multicore.master.userobjs.765995878" name="Slave Objects (not visible)" superClass="com.crt.advproject.link.cpp.multicore.master.userobjs" useByScannerDiscovery="false" valueType="userObjs"/>
 								<option id="com.crt.advproject.link.cpp.arch.1311531126" name="Architecture" superClass="com.crt.advproject.link.cpp.arch" value="com.crt.advproject.link.cpp.target.cm3" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.cpp.script.1528821517" name="Linker script" superClass="com.crt.advproject.link.cpp.script" value="&quot;esp_Release.ld&quot;" valueType="string"/>
 								<option id="com.crt.advproject.link.cpp.manage.1624064341" name="Manage linker script" superClass="com.crt.advproject.link.cpp.manage" value="true" valueType="boolean"/>
@@ -209,15 +217,17 @@
 									<listOptionValue builtIn="false" value="-print-memory-usage"/>
 								</option>
 								<option id="com.crt.advproject.link.cpp.hdrlib.1104693936" name="Library" superClass="com.crt.advproject.link.cpp.hdrlib" value="com.crt.advproject.cpp.link.hdrlib.newlib.nohost" valueType="enumerated"/>
-								<option id="gnu.cpp.link.option.libs.1687909524" superClass="gnu.cpp.link.option.libs" valueType="libs">
+								<option id="gnu.cpp.link.option.libs.1687909524" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="lpc_board_nxp_lpcxpresso_1549"/>
 									<listOptionValue builtIn="false" value="lpc_chip_15xx"/>
+									<listOptionValue builtIn="false" value="freertos"/>
 								</option>
-								<option id="gnu.cpp.link.option.paths.485506325" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+								<option id="gnu.cpp.link.option.paths.485506325" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_board_nxp_lpcxpresso_1549/Release}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/freertos/Release}&quot;"/>
 								</option>
-								<option id="com.crt.advproject.link.cpp.crpenable.1117459278" superClass="com.crt.advproject.link.cpp.crpenable"/>
+								<option id="com.crt.advproject.link.cpp.crpenable.1117459278" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.cpp.crpenable"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1720289515" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -245,10 +255,7 @@
 		<projectStorage>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
 &lt;TargetConfig&gt;&#13;
 &lt;Properties property_2="LPC15xx_256K.cfx" property_3="NXP" property_4="LPC1549" property_count="5" version="70200"/&gt;&#13;
-&lt;infoList vendor="NXP"&gt;&#13;
-&lt;info chip="LPC1549" connectscript="LPC15RunBootRomConnect.scp" flash_driver="LPC15xx_256K.cfx" match_id="0x0" name="LPC1549" resetscript="LPC15RunBootRomReset.scp" stub="crt_emu_cm3_gen"&gt;&#13;
-&lt;chip&gt;&#13;
-&lt;name&gt;LPC1549&lt;/name&gt;&#13;
+&lt;infoList vendor="NXP"&gt;&lt;info chip="LPC1549" connectscript="LPC15RunBootRomConnect.scp" flash_driver="LPC15xx_256K.cfx" match_id="0x0" name="LPC1549" resetscript="LPC15RunBootRomReset.scp" stub="crt_emu_cm3_gen"&gt;&lt;chip&gt;&lt;name&gt;LPC1549&lt;/name&gt;&#13;
 &lt;family&gt;LPC15xx&lt;/family&gt;&#13;
 &lt;vendor&gt;NXP (formerly Philips)&lt;/vendor&gt;&#13;
 &lt;reset board="None" core="Real" sys="Real"/&gt;&#13;
@@ -299,8 +306,7 @@
 &lt;peripheralInstance derived_from="C-CAN0" determined="infoFile" id="C-CAN0" location="0x400f0000"/&gt;&#13;
 &lt;peripheralInstance derived_from="IOCON" determined="infoFile" id="IOCON" location="0x400f8000"/&gt;&#13;
 &lt;/chip&gt;&#13;
-&lt;processor&gt;&#13;
-&lt;name gcc_name="cortex-m3"&gt;Cortex-M3&lt;/name&gt;&#13;
+&lt;processor&gt;&lt;name gcc_name="cortex-m3"&gt;Cortex-M3&lt;/name&gt;&#13;
 &lt;family&gt;Cortex-M&lt;/family&gt;&#13;
 &lt;/processor&gt;&#13;
 &lt;link href="LPC15xx_peripheral.xme" show="embed" type="simple"/&gt;&#13;
@@ -311,4 +317,5 @@
 	<storageModule moduleId="com.crt.advproject">
 		<boardId>LPCXpresso1549</boardId>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
