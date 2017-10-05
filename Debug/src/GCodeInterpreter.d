@@ -1,6 +1,7 @@
 src/GCodeInterpreter.o src/GCodeInterpreter.d: \
- ../src/GCodeInterpreter.cpp ../src/GCodeInterpreter.h \
- ../src/UniversalClass.h \
+ ../src/GCodeInterpreter.cpp \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/GCodeInterpreter.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/UniversalClass.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/FreeRTOS.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/projdefs.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/FreeRTOSConfig.h \
@@ -61,9 +62,9 @@ src/GCodeInterpreter.o src/GCodeInterpreter.d: \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/list.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/queue.h
 
-../src/GCodeInterpreter.h:
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/GCodeInterpreter.h:
 
-../src/UniversalClass.h:
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/UniversalClass.h:
 
 C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/FreeRTOS.h:
 

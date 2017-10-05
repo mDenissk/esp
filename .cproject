@@ -40,6 +40,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_board_nxp_lpcxpresso_1549/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/freertos/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/inc/usbd}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/esp/inc}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.cpp.misc.dialect.1299638922" name="Language standard" superClass="com.crt.advproject.cpp.misc.dialect" value="com.crt.advproject.misc.dialect.cpp11" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.732160579" superClass="com.crt.advproject.compiler.cpp.input"/>
@@ -64,6 +66,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_board_nxp_lpcxpresso_1549/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/freertos/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/esp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lpc_chip_15xx/inc/usbd}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.c.misc.dialect.444664770" name="Language standard" superClass="com.crt.advproject.c.misc.dialect" value="com.crt.advproject.misc.dialect.c11" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.input.1986444157" superClass="com.crt.advproject.compiler.input"/>
@@ -107,6 +111,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/freertos/Debug}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.link.cpp.crpenable.1244245420" name="Enable automatic placement of Code Read Protection field in image" superClass="com.crt.advproject.link.cpp.crpenable"/>
+								<option id="com.crt.advproject.link.cpp.multicore.slave.103652330" name="Multicore configuration" superClass="com.crt.advproject.link.cpp.multicore.slave"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.495935140" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -247,9 +252,6 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="esp.com.crt.advproject.projecttype.exe.1474242605" name="Executable" projectType="com.crt.advproject.projecttype.exe"/>
 	</storageModule>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="com.crt.config">
 		<projectStorage>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
@@ -318,4 +320,17 @@
 		<boardId>LPCXpresso1549</boardId>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.1654578785;com.crt.advproject.config.exe.debug.1654578785.;com.crt.advproject.gas.exe.debug.961339906;com.crt.advproject.assembler.input.216434674">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.1654578785;com.crt.advproject.config.exe.debug.1654578785.;com.crt.advproject.cpp.exe.debug.1373351651;com.crt.advproject.compiler.cpp.input.732160579">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.1654578785;com.crt.advproject.config.exe.debug.1654578785.;com.crt.advproject.gcc.exe.debug.353712939;com.crt.advproject.compiler.input.1986444157">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="refreshScope"/>
 </cproject>

@@ -21,7 +21,7 @@
 
 #include "FreeRTOS.h"
 #include "queue.h"
-//#include "user_vcom.h"
+#include "user_vcom.h"
 
 
 //Insert your own classes

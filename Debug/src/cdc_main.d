@@ -1,4 +1,4 @@
-src/esp.o src/esp.d: ../src/esp.cpp \
+src/cdc_main.o src/cdc_main.d: ../src/cdc_main.c \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_board_nxp_lpcxpresso_1549\inc/board.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/chip.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/lpc_types.h \
@@ -49,7 +49,22 @@ src/esp.o src/esp.d: ../src/esp.cpp \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/i2cs_15xx.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/lpc_types.h \
- C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/DigitalIoPin.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/app_usbd_cfg.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/error.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_rom_api.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_hw.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_core.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_mscuser.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_msc.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_dfuuser.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_dfu.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_hiduser.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_hid.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_cdcuser.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_cdc.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/cdc_vcom.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/app_usbd_cfg.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/FreeRTOS.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/projdefs.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/FreeRTOSConfig.h \
@@ -57,12 +72,10 @@ src/esp.o src/esp.d: ../src/esp.cpp \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/portmacro.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/mpu_wrappers.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/queue.h \
- C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/user_vcom.h \
- C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/UniversalClass.h \
- C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/GCodeInterpreter.h \
- C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/UniversalClass.h \
- C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/task.h \
- C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/list.h
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/semphr.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/queue.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/ITM_write.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/user_vcom.h
 
 C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_board_nxp_lpcxpresso_1549\inc/board.h:
 
@@ -164,7 +177,37 @@ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_board_nxp_lpcxpres
 
 C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/lpc_types.h:
 
-C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/DigitalIoPin.h:
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/app_usbd_cfg.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/error.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_rom_api.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_hw.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_core.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_mscuser.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_msc.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_dfuuser.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_dfu.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_hiduser.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_hid.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_cdcuser.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc\usbd/usbd_cdc.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/cdc_vcom.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/app_usbd_cfg.h:
 
 C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/FreeRTOS.h:
 
@@ -180,14 +223,10 @@ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/mpu_wrapp
 
 C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/queue.h:
 
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/semphr.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/queue.h:
+
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/ITM_write.h:
+
 C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/user_vcom.h:
-
-C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/UniversalClass.h:
-
-C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/GCodeInterpreter.h:
-
-C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/UniversalClass.h:
-
-C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/task.h:
-
-C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\inc/list.h:

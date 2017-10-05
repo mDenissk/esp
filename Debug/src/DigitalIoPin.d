@@ -1,5 +1,5 @@
 src/DigitalIoPin.o src/DigitalIoPin.d: ../src/DigitalIoPin.cpp \
- ../src/DigitalIoPin.h \
+ C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/DigitalIoPin.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/chip.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/lpc_types.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/sys_config.h \
@@ -48,7 +48,7 @@ src/DigitalIoPin.o src/DigitalIoPin.d: ../src/DigitalIoPin.cpp \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/i2c_common_15xx.h \
  C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/i2cs_15xx.h
 
-../src/DigitalIoPin.h:
+C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\esp\inc/DigitalIoPin.h:
 
 C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\inc/chip.h:
 
