@@ -1,6 +1,6 @@
 # esp
 
-Makeblock XY-plotter firmware
+**Makeblock XY-plotter firmware**
 Embedded System Project
 
 Our goal of the project is to write an LPC1549 based firmware to control Makeblock
