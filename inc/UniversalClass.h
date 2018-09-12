@@ -13,19 +13,25 @@ class UniversalClass {
 public:
 enum tasks
 {
-	A0 = -1, // why not
-	G1,
-	G28,
-	M1,
-	M4,
-	M10
+	ERROR = -2,
+	A0 = 0, // why not
+	G1 = 1,
+	G28 = 2,
+	M1 = 3,
+	M4 = 4,
+	M10 = 5,
+	RESET = 6,
+	DISABLE_LIMIT_SAFETY = 7,
+	ENABLE_LIMIT_SAFETY = 8,
+	IX = 9,
+	IY = 10
 };
 struct Task
 {
 	tasks _Task;
 	int _SubTask;
 	double _XCordinate;
-	double _YCordinate; // maybe we should use int: (double) 75.75 -> (int) 7575
+	double _YCordinate;
 }task;
 
 

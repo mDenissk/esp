@@ -8,20 +8,19 @@
 #ifndef GCODEINTERPRETER_H_
 #define GCODEINTERPRETER_H_
 
+#include <string>
+#include <cstdlib>
+#include <stdlib.h>
+#include "user_vcom.h"
 #include "UniversalClass.h"
-
-#include "FreeRTOS.h"
-#include "task.h"
-#include "queue.h"
 
 class GCodeInterpreter {
 
 public:
-	GCodeInterpreter(QueueHandle_t xQueue);
-	virtual ~GCodeInterpreter();
-	void Work();
+	UniversalClass::Task CreateTask(char* line, int len);
+	void sendOK();
 private:
-	QueueHandle_t _xQueue;
+	const char _Answer[4]="OK\n";
 };
 
 #endif /* GCODEINTERPRETER_H_ */

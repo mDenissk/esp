@@ -38,25 +38,25 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: esp.axf
+all: plotter-final.axf
 
 # Tool invocations
-esp.axf: $(OBJS) $(USER_OBJS)
+plotter-final.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU C++ Linker'
-	arm-none-eabi-c++ -nostdlib -L"C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\Debug" -L"C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\Debug" -Xlinker -Map="esp.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "esp_Debug.ld" -o "esp.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-c++ -nostdlib -L"C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\lpc_chip_15xx\Debug" -L"C:\Users\komar\Documents\MCUXpressoIDE_10.0.2_411\project\freertos\Debug" -Xlinker -Map="plotter-final.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "plotter-final_Debug.ld" -o "plotter-final.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(C_UPPER_DEPS)$(CXX_DEPS)$(OBJS)$(CPP_DEPS)$(C_DEPS) esp.axf
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(C_UPPER_DEPS)$(CXX_DEPS)$(OBJS)$(CPP_DEPS)$(C_DEPS) plotter-final.axf
 	-@echo ' '
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "esp.axf"; # arm-none-eabi-objcopy -v -O binary "esp.axf" "esp.bin" ; # checksum -p LPC1549 -d "esp.bin";
+	-arm-none-eabi-size "plotter-final.axf"; # arm-none-eabi-objcopy -v -O binary "plotter-final.axf" "plotter-final.bin" ; # checksum -p LPC1549 -d "plotter-final.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents
