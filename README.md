@@ -1,9 +1,5 @@
 # ESP
 
-* Deniss Komarskis
-* Phuc Nguyen
-* Tuomas Tanskanen
-
 **Makeblock XY-plotter firmware**
 Embedded System Project
 
